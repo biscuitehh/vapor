@@ -4,7 +4,7 @@ let package = Package(
     name: "Vapor",
     dependencies: [
         //Standards package. Contains protocols for cross-project compatability.
-        .Package(url: "https://github.com/swiftx/s4.git", majorVersion: 0, minor: 2),
+        .Package(url: "https://github.com/open-swift/s4.git", majorVersion: 0, minor: 2),
 
         //Provides critical String functions Foundation is missing on Linux
         .Package(url: "https://github.com/Zewo/String.git", majorVersion: 0, minor: 4),
@@ -13,7 +13,7 @@ let package = Package(
         .Package(url: "https://github.com/Zewo/JSON.git", majorVersion: 0, minor: 4),
 
         //Swift wrapper around Sockets, used for built-in HTTP server
-        .Package(url: "https://github.com/biscuitehh/hummingbird.git", majorVersion: 2, minor: 0),
+        .Package(url: "https://github.com/qutheory/hummingbird.git", majorVersion: 2, minor: 0),
 
         //SHA2 + HMAC hashing. Used by the core to create session identifiers.
         .Package(url: "https://github.com/CryptoKitten/HMAC.git", majorVersion: 0, minor: 3),
